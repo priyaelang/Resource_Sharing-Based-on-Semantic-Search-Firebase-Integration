@@ -9,7 +9,7 @@ A machine learning-powered system that combines semantic search and resource typ
 5) Resource Type Prediction: Automatically categorizes resources as books, notes, hardware, etc.
 
 📊 Dataset Structure
-Your CSV file should contain the following columns:
+The dataset CSV file contains the following columns:
 1) Resource Name: Title of the learning resource
 2) Description: Detailed description of the resource
 3) Type: Category (e.g., book, notes, hardware, course)
@@ -18,19 +18,18 @@ Your CSV file should contain the following columns:
 
 🏗️ Model Architecture
 Hybrid Feature Extraction:-
-TF-IDF Vectorization: Captures keyword importance and frequency
-SBERT Embeddings: Provides semantic understanding using all-MiniLM-L6-v2
-Feature Combination: Concatenates both feature sets for comprehensive representation
+1) TF-IDF Vectorization: Captures keyword importance and frequency
+2) SBERT Embeddings: Provides semantic understanding using all-MiniLM-L6-v2
+3) Feature Combination: Concatenates both feature sets for comprehensive representation
 
 Classification Pipeline:-
 Input Text → TF-IDF + SBERT → Feature Concatenation → Logistic Regression → Resource Type
 
 📈 Model Performance:-
 The system provides detailed classification reports including:
-Precision, Recall, and F1-scores for each resource type
-Overall accuracy metrics
-Confusion matrix analysis
-
-Example output:
+* Precision, Recall, and F1-scores for each resource type
+* Overall accuracy metrics
+* Confusion matrix analysis
+* 
 📈 Model Evaluation:
           The model typically achieves strong performance across different resource types. For books, the system demonstrates 85% precision and 82% recall with an F1-score of 0.83 across 45 test samples. Notes classification shows 78% precision and 81% recall with an F1-score of 0.79 on 32 samples. Hardware resources achieve the highest performance with 92% precision, 88% recall, and an F1-score of 0.90 across 25 samples. Course classification maintains consistent performance with 87% precision, 89% recall, and an F1-score of 0.88 on 38 test samples.
