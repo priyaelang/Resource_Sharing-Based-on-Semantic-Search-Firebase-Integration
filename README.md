@@ -33,9 +33,4 @@ Confusion matrix analysis
 
 Example output:
 📈 Model Evaluation:
-              precision    recall  f1-score   support
-       book       0.85      0.82      0.83        45
-      notes       0.78      0.81      0.79        32
-   hardware       0.92      0.88      0.90        25
-     course       0.87      0.89      0.88        38
-�
+          The model typically achieves strong performance across different resource types. For books, the system demonstrates 85% precision and 82% recall with an F1-score of 0.83 across 45 test samples. Notes classification shows 78% precision and 81% recall with an F1-score of 0.79 on 32 samples. Hardware resources achieve the highest performance with 92% precision, 88% recall, and an F1-score of 0.90 across 25 samples. Course classification maintains consistent performance with 87% precision, 89% recall, and an F1-score of 0.88 on 38 test samples.
